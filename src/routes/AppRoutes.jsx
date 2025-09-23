@@ -4,6 +4,8 @@ import Login from "../components/Login";
 // import Dashboard from "../components/Dashboard";
  import StudentsAuth from "../pages/StudentsAuth";
 import CollegeAuth from "../pages/CollegeAuth";
+import About from "../components/About";
+import Contact from "../components/Contact";
 
 const AppRoutes = () => {
     return (
@@ -11,8 +13,10 @@ const AppRoutes = () => {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             {/* <Route path="/dashboard" element={<Dashboard />} /> */}
-            {<Route path="/students" element={<StudentsAuth />} /> }
-            {<Route path="/college" element={<CollegeAuth />} /> }
+            <Route path="/students" element={<StudentsAuth />} /> 
+            <Route path="/college" element={<CollegeAuth />} /> 
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
         </Routes>
     );
 };

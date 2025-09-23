@@ -25,7 +25,7 @@ const AuthTabs = () => {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-lg">
+    <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-lg bg-opacity-90">
       <div className="flex mb-6">
         <button
           className={`flex-1 py-2 font-semibold rounded-l ${tab === "login" ? "bg-blue-600 text-white" : "bg-gray-100 text-blue-600"}`}
@@ -161,10 +161,12 @@ const AuthTabs = () => {
   );
 };
 
-const CollegeAuth = () => (
-  <div className="flex justify-center items-center min-h-screen bg-gray-100">
-    <AuthTabs />
-  </div>
-);
+const CollegeAuth = () => {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <AuthTabs />
+    </div>
+  );
+};
 
 export default CollegeAuth;
