@@ -1,13 +1,16 @@
-import { BrowserRouter as Router } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import AppRoutes from "./routes/AppRoutes";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import AlumniList from "./pages/AlumniList";
+import AlumniForm from "./pages/AlumniForm";
+
 const App = () => {
   return (
     <Router>
-      <div>
-        <Navbar />
-        <AppRoutes />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/alumni" element={<AlumniList />} />
+        <Route path="/alumni/add" element={<AlumniForm />} />
+      </Routes>
     </Router>
   );
 };
