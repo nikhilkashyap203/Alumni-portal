@@ -42,8 +42,8 @@ const Home = () => {
                 </div>
             </main>
             
-            {/* Footer with fixed position */}
-            <div className="fixed bottom-0 left-0 right-0 z-20">
+            {/* Footer with relative position */}
+            <div className="relative bottom-0 left-0 right-0 z-20">
                 <Footer />
             </div>
         </div>
